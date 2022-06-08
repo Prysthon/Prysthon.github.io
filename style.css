@@ -17,3 +17,7 @@ body {
     line-height: 2;
     font-style: italic;
 }
+
+#foto {
+    border-radius: 25%;
+}
