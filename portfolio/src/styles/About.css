@@ -1,18 +1,67 @@
 #about {
-  background: #fff;
+  background: white;
   padding: 2rem 0;
 }
 
-#about .content h2 {
+#about h2 {
   text-align: center;
   margin-bottom: 1.5rem;
   font-size: 2.5rem; /* Aumentado para destacar o título */
   color: #00034c;
 }
 
-#about .content p {
-  max-width: 800px;
-  margin: 0.5rem auto;
+/* Container vermelho com altura total da viewport */
+.about-content {
+  display: flex;
+}
+
+/* Bloco verde (lado esquerdo) com 50% da largura e conteúdo centralizado */
+.about-text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
   text-align: center;
+}
+
+.about-text p {
   font-size: 1.1rem; /* Tamanho padronizado para o parágrafo */
+  margin-bottom: 1rem;
+}
+
+/* Bloco laranja (lado direito) com conteúdo centralizado */
+.about-info {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-info table {
+  border-collapse: collapse;
+}
+
+.about-info td {
+  padding: 1rem;
+}
+
+/* Regras para os info-item com fundo escuro, bordas arredondadas e dimensões fixas */
+.info-item {
+  background-color: #00034c;
+  color: #fff;
+  width: 300px;
+  height: 100px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.info-item svg {
+  margin-bottom: 0.5rem;
 }
