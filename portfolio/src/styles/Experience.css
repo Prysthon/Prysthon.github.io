@@ -20,7 +20,7 @@
 
 /* Container para o Marquee com exibição de somente 5 ícones */
 .marquee-wrapper {
-  width: 1000px; /* Ajuste este valor conforme necessário */
+  width: 1000px; /* Largura padrão para telas maiores */
   margin: 0 auto;
   overflow: hidden;
 }
@@ -119,4 +119,49 @@
 
 .modal-body li {
   margin-bottom: 0.5rem;
+}
+
+/* Responsividade */
+
+/* Para telas até 1024px */
+@media (max-width: 1024px) {
+  .marquee-wrapper {
+    width: 90%; /* Largura relativa para telas médias */
+  }
+}
+
+/* Para telas até 768px */
+@media (max-width: 768px) {
+  #experience {
+    padding: 1.5rem;
+  }
+
+  #experience .content h2 {
+    font-size: 2rem;
+  }
+
+  .marquee-wrapper {
+    width: 100%;
+  }
+
+  .experience-item {
+    padding: 0.75rem;
+    margin-right: 1rem;
+  }
+}
+
+/* Para telas até 480px */
+@media (max-width: 480px) {
+  #experience {
+    padding: 1rem;
+  }
+
+  #experience .content h2 {
+    font-size: 1.8rem;
+  }
+
+  .experience-item {
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+  }
 }

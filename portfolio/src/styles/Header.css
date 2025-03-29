@@ -76,3 +76,42 @@ nav {
 .nav-icons a img:hover {
   transform: scale(1.2);
 }
+
+/* Media Queries para Header */
+
+/* Para telas até 768px */
+@media (max-width: 768px) {
+  header {
+    padding: 0.75rem 1rem;
+  }
+  .logo {
+    font-size: 1.25rem;
+  }
+  .nav-links li {
+    margin: 0 0.5rem;
+  }
+  .nav-links li a {
+    font-size: 0.9rem;
+  }
+  .nav-icons a img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/* Para telas até 480px */
+@media (max-width: 480px) {
+  header {
+    padding: 0.5rem 0.75rem;
+  }
+  .logo {
+    font-size: 1rem;
+  }
+  .nav-links li a {
+    font-size: 0.8rem;
+  }
+  .nav-icons a img {
+    width: 18px;
+    height: 18px;
+  }
+}

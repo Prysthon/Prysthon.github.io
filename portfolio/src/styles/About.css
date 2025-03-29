@@ -6,23 +6,29 @@
 #about h2 {
   text-align: center;
   margin-bottom: 1.5rem;
-  font-size: 2.5rem; /* Aumentado para destacar o título */
+  font-size: 2.5rem; /* Título em destaque para telas maiores */
   color: #00034c;
 }
 
-/* Container vermelho com altura total da viewport */
+/* Container principal com layout flex */
 .about-content {
   display: flex;
+  flex-wrap: wrap; /* Garante que os itens se ajustem */
 }
 
-/* Bloco verde (lado esquerdo) com 50% da largura e conteúdo centralizado */
-.about-text {
+/* Blocos laterais com 50% de largura em telas grandes */
+.about-text,
+.about-info {
   width: 50%;
+  padding: 1rem;
+}
+
+/* Estilização do bloco de texto (lado esquerdo) */
+.about-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
   text-align: center;
 }
 
@@ -31,9 +37,8 @@
   margin-bottom: 1rem;
 }
 
-/* Bloco laranja (lado direito) com conteúdo centralizado */
+/* Estilização do bloco de informações (lado direito) */
 .about-info {
-  width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -47,7 +52,7 @@
   padding: 1rem;
 }
 
-/* Regras para os info-item com fundo escuro, bordas arredondadas e dimensões fixas */
+/* Regras para os info-item com fundo escuro e dimensões fixas */
 .info-item {
   background-color: #00034c;
   color: #fff;
@@ -64,4 +69,45 @@
 
 .info-item svg {
   margin-bottom: 0.5rem;
+}
+
+/* Responsividade para telas de até 768px */
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column; /* Empilha os blocos verticalmente */
+  }
+  
+  .about-text,
+  .about-info {
+    width: 100%;
+    padding: 0.5rem;
+  }
+  
+  #about h2 {
+    font-size: 2rem;
+  }
+  
+  /* Ajuste dos itens de informação para telas menores */
+  .info-item {
+    width: 90%;
+    max-width: 300px;
+    height: auto;
+    padding: 1rem;
+  }
+}
+
+/* Responsividade para telas de até 480px */
+@media (max-width: 480px) {
+  #about h2 {
+    font-size: 1.8rem;
+  }
+  
+  .about-text p {
+    font-size: 1rem;
+  }
+  
+  .info-item {
+    width: 100%;
+    padding: 0.75rem;
+  }
 }

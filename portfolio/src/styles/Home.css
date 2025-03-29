@@ -1,6 +1,6 @@
 /* Container principal */
 #home {
-  position: relative; /* Necessário para posicionar o pseudo-elemento */
+  position: relative; /* Para posicionar o pseudo-elemento */
   display: flex;
   align-items: flex-end;
   height: 60vh;
@@ -10,7 +10,7 @@
   z-index: 0;
 }
 
-/* Pseudo-elemento para a imagem de fundo com opacidade */
+/* Pseudo-elemento para a imagem de fundo */
 #home::before {
   content: "";
   position: absolute;
@@ -22,15 +22,15 @@
   background-size: cover;
   background-position: center;
   opacity: 0.8;
-  z-index: -1; /* Fica atrás dos elementos filhos */
+  z-index: -1;
 }
 
-/* Lado esquerdo (bloco vermelho) com informações centralizadas */
+/* Lado esquerdo (bloco com informações) */
 .hero-left {
   display: flex;
   flex-direction: column;
-  align-items: center;  /* Centraliza horizontalmente */
-  text-align: center;   /* Centraliza o texto */
+  align-items: center;
+  text-align: center;
   padding: 2rem;
   color: white;
   z-index: 1;
@@ -69,4 +69,55 @@ h1 {
   display: flex;
   gap: 1rem;
   margin-top: 1rem;
+}
+
+/* Media Queries para Home */
+
+/* Para telas até 768px */
+@media (max-width: 768px) {
+  #home {
+    height: 80vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero-left,
+  .hero-right {
+    width: 100%;
+    padding: 1rem;
+    height: auto;
+  }
+  /* Alterando a ordem se desejar que a imagem venha primeiro */
+  .hero-right {
+    order: 1;
+    height: 50vh;
+  }
+  .hero-left {
+    order: 2;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  .hero-medium {
+    font-size: 1.5rem;
+  }
+  .hero-small {
+    font-size: 0.9rem;
+  }
+}
+
+/* Para telas até 480px */
+@media (max-width: 480px) {
+  #home {
+    height: 70vh;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  .hero-medium {
+    font-size: 1.25rem;
+  }
+  .hero-small {
+    font-size: 0.8rem;
+  }
 }
