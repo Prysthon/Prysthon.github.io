@@ -37,7 +37,7 @@ export const experiences = [
     ],
     local: "",
     logo: "https://media.licdn.com/dms/image/v2/C560BAQHxvye0mjoRow/company-logo_100_100/company-logo_100_100/0/1654696369970/rascimatec_logo?e=1747872000&v=beta&t=nEExK9NTAz3mgX8xnjs94T61wAk6rYS9JTbzp_XlN8s",
-    website: "https://www.cimatec.org.br"
+    website: "https://rascimatec.github.io/"
   },
   {
     empresa: "Cogitt Consultoria",
@@ -53,7 +53,7 @@ export const experiences = [
     ],
     local: "",
     logo: "https://media.licdn.com/dms/image/v2/D4D0BAQG0WZ1HY_plOQ/company-logo_100_100/company-logo_100_100/0/1718812823998/cogitt_consultoria_logo?e=1747872000&v=beta&t=2VmBC6MVSNsJYmpP7sPD_yJfGIGXtdKSCiArAPNWNFo",
-    website: "https://www.cogitt.com.br"
+    website: "https://cogittconsultoria.com.br/"
   },
   {
     empresa: "LNJ Engenharia LTDA",
@@ -77,7 +77,7 @@ export const experiences = [
     ],
     local: "",
     logo: "https://media.licdn.com/dms/image/v2/C560BAQHunG7fkt8veg/company-logo_100_100/company-logo_100_100/0/1631380953507?e=1747872000&v=beta&t=LARvnFTbtIcuFJfZlCmIe-ZPrKK4KmQFfLnqDa038l0",
-    website: "https://www.otimizaconsultoriajr.com"
+    website: "https://otimizajr.com.br/"
   },
   {
     empresa: "ENGETOP",
