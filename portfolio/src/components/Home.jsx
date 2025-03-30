@@ -10,7 +10,7 @@ function Home() {
         <h1>Tiago Prysthon</h1>
         <p className="hero-medium">Estudante de Engenharia da Computação</p>
         <p className="hero-small">
-          Desenvolvedor Full Stack e estagiário de inteligência competitiva do iFood
+          Desenvolvedor de software e estagiário de inteligência competitiva
         </p>
         <div className="tech-icons">
           <DiPython size={40} title="Python" />

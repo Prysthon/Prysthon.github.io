@@ -26,7 +26,7 @@ function About() {
                       <FaBook size={24} />
                       <div>
                         <strong>Educação:</strong>
-                        <span> Graduando Engenharia da Computação</span>
+                        <span> Engenharia da Computação / Senai Cimatec</span>
                       </div>
                     </div>
                   </td>
@@ -34,7 +34,7 @@ function About() {
                     <div className="info-item">
                       <MdWorkOutline size={24} />
                       <div>
-                        <strong>Empresa:</strong>
+                        <strong>Empresa atual:</strong>
                         <span> iFood</span>
                       </div>
                     </div>

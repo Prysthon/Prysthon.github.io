@@ -7,13 +7,18 @@ function Skills() {
       <div className="container content">
         <h2>Skills</h2>
         <ul className="skills-list">
-          <li>HTML5</li>
-          <li>CSS3</li>
           <li>JavaScript</li>
-          <li>React</li>
+          <li>Typescript</li>
+          <li>React / React Native</li>
           <li>Node.js</li>
+          <li>Express</li>
           <li>Python</li>
-          {/* Adicione outras skills conforme necessário */}
+          <li>Django</li>
+          <li>Sequelize</li>
+          <li>SQL</li>
+          <li>Sinon - Chai</li>
+          <li>RTL</li>
+          <li>Docker</li>
         </ul>
       </div>
     </section>

@@ -40,6 +40,6 @@ export const projects = [
     image: "https://via.placeholder.com/300x200",
     github: "https://github.com/Prysthon/tic-tac-toe",
     technologies: ["C", "C++"],
-    description: "Jogo da velha desenvolvido em React."
+    description: "Jogo da velha desenvolvido em C."
   }
 ];

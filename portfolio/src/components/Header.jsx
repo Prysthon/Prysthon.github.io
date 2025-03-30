@@ -15,13 +15,13 @@ function Header() {
             <li><a href="#contact">Contato</a></li>
           </ul>
           <div className="nav-icons">
-            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/tiagoprysthon/" target="_blank" rel="noopener noreferrer">
               <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" />
             </a>
-            <a href="https://www.github.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/Prysthon" target="_blank" rel="noopener noreferrer">
               <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" />
             </a>
-            <a href="https://mail.google.com" target="_blank" rel="noopener noreferrer">
+            <a href="mailto:tiagoprysthon14@gmail.com" target="_blank" rel="noopener noreferrer">
               <img src="https://cdn-icons-png.flaticon.com/512/281/281769.png" alt="Gmail" />
             </a>
           </div>
