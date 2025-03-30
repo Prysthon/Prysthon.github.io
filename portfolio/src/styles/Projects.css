@@ -1,5 +1,7 @@
+/* Projects.css */
 #projects {
   background: #fff;
+  padding: 2rem 0;
 }
 
 #projects .content h2 {
@@ -21,11 +23,18 @@
   padding: 1.5rem;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: relative;
+  overflow: hidden;
   transition: transform 0.3s ease;
 }
 
 .project-card:hover {
   transform: translateY(-5px);
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 8px;
 }
 
 .project-card h3 {
@@ -36,4 +45,50 @@
 .project-card p {
   font-size: 0.9rem;
   line-height: 1.4;
+}
+
+/* Camada de overlay (efeito de hover) */
+.project-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(243, 156, 18, 0.95); /* cor secundária */
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.project-card:hover .project-overlay {
+  opacity: 1;
+}
+
+.tech-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tech-list li {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
+
+.project-overlay a {
+  color: #fff;
+  text-decoration: underline;
+  font-weight: bold;
+  margin-top: 0.5rem;
 }
