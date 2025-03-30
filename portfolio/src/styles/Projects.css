@@ -16,6 +16,7 @@
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
   margin-top: 2rem;
+  padding: 0 1rem;
 }
 
 .project-card {
@@ -91,4 +92,44 @@
   text-decoration: underline;
   font-weight: bold;
   margin-top: 0.5rem;
+}
+
+/* Responsividade */
+
+/* Para telas até 768px */
+@media (max-width: 768px) {
+  #projects {
+    padding: 1.5rem 0;
+  }
+  #projects .content h2 {
+    font-size: 1.8rem;
+  }
+  .projects-grid {
+    gap: 1.5rem;
+  }
+  .project-card {
+    padding: 1rem;
+  }
+}
+
+/* Para telas até 480px */
+@media (max-width: 480px) {
+  #projects {
+    padding: 1rem 0;
+  }
+  #projects .content h2 {
+    font-size: 1.6rem;
+  }
+  .projects-grid {
+    gap: 1rem;
+  }
+  .project-card {
+    padding: 0.75rem;
+  }
+  .project-card h3 {
+    font-size: 1.1rem;
+  }
+  .project-card p {
+    font-size: 0.85rem;
+  }
 }

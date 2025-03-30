@@ -18,11 +18,13 @@
   color: #00034c;
 }
 
-/* Container para o Marquee com exibição de somente 5 ícones */
+/* Marquee Wrapper com largura fluida */
 .marquee-wrapper {
-  width: 1000px; /* Largura padrão para telas maiores */
+  max-width: 1000px; /* Largura máxima para telas maiores */
+  width: 100%;
   margin: 0 auto;
   overflow: hidden;
+  display: flex;
 }
 
 /* Itens do Marquee */
@@ -111,7 +113,7 @@
   text-decoration: underline;
 }
 
-/* Estilos para a lista de funções */
+/* Lista de funções no Modal */
 .modal-body ul {
   list-style: disc;
   margin-left: 1.5rem;
@@ -126,7 +128,7 @@
 /* Para telas até 1024px */
 @media (max-width: 1024px) {
   .marquee-wrapper {
-    width: 90%; /* Largura relativa para telas médias */
+    width: 90%;
   }
 }
 

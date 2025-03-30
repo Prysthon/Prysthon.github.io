@@ -1,3 +1,5 @@
+/* About.css */
+
 #about {
   background: white;
   padding: 2rem 0;
@@ -13,13 +15,14 @@
 /* Container principal com layout flex */
 .about-content {
   display: flex;
-  flex-wrap: wrap; /* Garante que os itens se ajustem */
+  flex-direction: row; /* Garante disposição lado a lado em telas maiores */
+  /* Removemos o flex-wrap para evitar sobreposição */
 }
 
-/* Blocos laterais com 50% de largura em telas grandes */
+/* Blocos laterais com flex igualitário */
 .about-text,
 .about-info {
-  width: 50%;
+  flex: 1;
   padding: 1rem;
 }
 
@@ -33,7 +36,7 @@
 }
 
 .about-text p {
-  font-size: 1.1rem; /* Tamanho padronizado para o parágrafo */
+  font-size: 1.1rem;
   margin-bottom: 1rem;
 }
 
@@ -52,11 +55,12 @@
   padding: 1rem;
 }
 
-/* Regras para os info-item com fundo escuro e dimensões fixas */
+/* Estilos para os info-item */
 .info-item {
   background-color: #00034c;
   color: #fff;
-  width: 300px;
+  width: 100%;         /* Usa 100% do espaço do container */
+  max-width: 300px;    /* Limite máximo para manter o design */
   height: 100px;
   border-radius: 10px;
   display: flex;
@@ -87,7 +91,6 @@
     font-size: 2rem;
   }
   
-  /* Ajuste dos itens de informação para telas menores */
   .info-item {
     width: 90%;
     max-width: 300px;

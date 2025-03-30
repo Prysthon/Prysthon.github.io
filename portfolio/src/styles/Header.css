@@ -9,6 +9,7 @@ header {
   transform: translateX(-50%);
   z-index: 1000;
   border-radius: 20px;
+  transition: padding 0.3s ease, width 0.3s ease, top 0.3s ease;
 }
 
 nav {
@@ -28,6 +29,7 @@ nav {
   display: flex;
   justify-content: center;
   list-style: none;
+  flex-wrap: wrap; /* Permite quebra caso os itens excedam o espaço */
 }
 
 .nav-links li {
@@ -77,12 +79,14 @@ nav {
   transform: scale(1.2);
 }
 
-/* Media Queries para Header */
+/* Responsividade para dispositivos menores */
 
 /* Para telas até 768px */
 @media (max-width: 768px) {
   header {
     padding: 0.75rem 1rem;
+    width: 95%;
+    top: 15px;
   }
   .logo {
     font-size: 1.25rem;
@@ -103,6 +107,8 @@ nav {
 @media (max-width: 480px) {
   header {
     padding: 0.5rem 0.75rem;
+    width: calc(100% - 20px); /* Largura total com margem */
+    top: 10px;
   }
   .logo {
     font-size: 1rem;

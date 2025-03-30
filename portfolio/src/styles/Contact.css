@@ -1,5 +1,10 @@
 #contact {
   background: #fff;
+  padding: 2rem 0;
+}
+
+#contact .content {
+  padding: 0 1rem;
 }
 
 #contact .content h2 {
@@ -13,4 +18,32 @@
   max-width: 800px;
   margin: 0.5rem auto;
   text-align: center;
+  font-size: 1rem;
+}
+
+/* Media Queries para Responsividade */
+
+/* Para telas até 768px */
+@media (max-width: 768px) {
+  #contact .content h2 {
+    font-size: 1.75rem;
+  }
+  #contact .content p {
+    font-size: 0.95rem;
+    max-width: 90%;
+  }
+}
+
+/* Para telas até 480px */
+@media (max-width: 480px) {
+  #contact {
+    padding: 1.5rem 0;
+  }
+  #contact .content h2 {
+    font-size: 1.5rem;
+  }
+  #contact .content p {
+    font-size: 0.9rem;
+    max-width: 95%;
+  }
 }

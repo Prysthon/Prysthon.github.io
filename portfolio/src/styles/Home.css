@@ -38,7 +38,7 @@
   width: 60%;
 }
 
-/* Lado direito */
+/* Lado direito (foto) */
 .hero-right {
   height: 80%;
   z-index: 1;
@@ -87,13 +87,13 @@ h1 {
     padding: 1rem;
     height: auto;
   }
-  /* Alterando a ordem se desejar que a imagem venha primeiro */
-  .hero-right {
-    order: 1;
-    height: 50vh;
-  }
+  /* Alterando a ordem: texto primeiro e foto depois */
   .hero-left {
+    order: 1;
+  }
+  .hero-right {
     order: 2;
+    height: 50vh;
   }
   h1 {
     font-size: 2.5rem;
