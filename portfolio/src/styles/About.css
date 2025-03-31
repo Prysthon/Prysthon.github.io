@@ -16,7 +16,6 @@
 .about-content {
   display: flex;
   flex-direction: row; /* Garante disposição lado a lado em telas maiores */
-  /* Removemos o flex-wrap para evitar sobreposição */
 }
 
 /* Blocos laterais com flex igualitário */

@@ -4,11 +4,10 @@ export const experiences = [
     cargo: "Estagiário em Inteligência Competitiva",
     periodo: "fevereiro de 2025 - Presente",
     descricao: [
-      "Realizo o monitoramento contínuo de tendências, inovações tecnológicas e movimentações de mercado com foco em plataformas digitais e soluções baseadas em dados, com destaque para o uso de inteligência artificial.",
       "Produzo relatórios analíticos, benchmarkings e apresentações executivas voltadas à geração de insights para apoiar decisões de negócio em áreas como estratégia, M&A e crescimento.",
       "Analiso dados de performance digital para mensurar o impacto de campanhas e eventos relevantes, contribuindo para a otimização de investimentos e ações de marketing.",
-      "Desenvolvi automações para consolidar bases de dados, extrair informações relevantes e estruturar rotinas de monitoramento de mercado com maior eficiência.",
-      "Implementei scripts e rotinas programadas para interpretar resultados financeiros e comunicados de concorrentes, transformando essas informações em alertas automatizados e análises comparativas."
+      "Desenvolvo automações para consolidar bases de dados, extrair informações relevantes e estruturar rotinas de monitoramento de mercado com maior eficiência.",
+      "Implementei scripts para interpretar resultados financeiros e comunicados de concorrentes, transformando essas informações em alertas automatizados e análises comparativas."
     ],
     local: "",
     logo: "https://media.licdn.com/dms/image/v2/C510BAQFupNOyDYF1sg/company-logo_100_100/company-logo_100_100/0/1631315877254?e=1747872000&v=beta&t=KstMKCrcF85vnkTnI51Kiu4G4Dj5sMFrI4MtbDiVN9E",
